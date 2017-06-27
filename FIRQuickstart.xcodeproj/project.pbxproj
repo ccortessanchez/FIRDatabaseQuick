@@ -12,9 +12,12 @@
 		59AABEFD1F025425008EE423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AABEFB1F025425008EE423 /* Main.storyboard */; };
 		59AABEFF1F025425008EE423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AABEFE1F025425008EE423 /* Assets.xcassets */; };
 		59AABF021F025425008EE423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AABF001F025425008EE423 /* LaunchScreen.storyboard */; };
+		59AABF101F025E3A008EE423 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59AABF0F1F025E3A008EE423 /* GoogleService-Info.plist */; };
+		E3AFAB57A25AB05A53797870 /* Pods_FIRQuickstart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5DAE6382BD8A6853F1CE71 /* Pods_FIRQuickstart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07AC8F1AEE921DA7EEAC1538 /* Pods-FIRQuickstart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIRQuickstart.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIRQuickstart/Pods-FIRQuickstart.release.xcconfig"; sourceTree = "<group>"; };
 		59AABEF41F025425008EE423 /* FIRQuickstart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIRQuickstart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AABEF71F025425008EE423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59AABEF91F025425008EE423 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		59AABEFE1F025425008EE423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59AABF011F025425008EE423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59AABF031F025425008EE423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59AABF0F1F025E3A008EE423 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C5DAE6382BD8A6853F1CE71 /* Pods_FIRQuickstart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIRQuickstart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3009B9A9BF3B1425F570267 /* Pods-FIRQuickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIRQuickstart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIRQuickstart/Pods-FIRQuickstart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3AFAB57A25AB05A53797870 /* Pods_FIRQuickstart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A758CFEF7F6B8D48EFD509E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3009B9A9BF3B1425F570267 /* Pods-FIRQuickstart.debug.xcconfig */,
+				07AC8F1AEE921DA7EEAC1538 /* Pods-FIRQuickstart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B120B086ABEC8317C524C04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C5DAE6382BD8A6853F1CE71 /* Pods_FIRQuickstart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		59AABEEB1F025425008EE423 = {
 			isa = PBXGroup;
 			children = (
 				59AABEF61F025425008EE423 /* FIRQuickstart */,
 				59AABEF51F025425008EE423 /* Products */,
+				1A758CFEF7F6B8D48EFD509E /* Pods */,
+				4B120B086ABEC8317C524C04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		59AABEF61F025425008EE423 /* FIRQuickstart */ = {
 			isa = PBXGroup;
 			children = (
+				59AABF0F1F025E3A008EE423 /* GoogleService-Info.plist */,
 				59AABEF71F025425008EE423 /* AppDelegate.swift */,
 				59AABEF91F025425008EE423 /* ViewController.swift */,
 				59AABEFB1F025425008EE423 /* Main.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59AABF061F025425008EE423 /* Build configuration list for PBXNativeTarget "FIRQuickstart" */;
 			buildPhases = (
+				A528F876AF8346A8BB665B7A /* [CP] Check Pods Manifest.lock */,
 				59AABEF01F025425008EE423 /* Sources */,
 				59AABEF11F025425008EE423 /* Frameworks */,
 				59AABEF21F025425008EE423 /* Resources */,
+				790BB0F265A238A4A37EE610 /* [CP] Embed Pods Frameworks */,
+				89128D7F87619A3D22F37D70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				59AABF021F025425008EE423 /* LaunchScreen.storyboard in Resources */,
+				59AABF101F025E3A008EE423 /* GoogleService-Info.plist in Resources */,
 				59AABEFF1F025425008EE423 /* Assets.xcassets in Resources */,
 				59AABEFD1F025425008EE423 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		790BB0F265A238A4A37EE610 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIRQuickstart/Pods-FIRQuickstart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89128D7F87619A3D22F37D70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIRQuickstart/Pods-FIRQuickstart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A528F876AF8346A8BB665B7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59AABEF01F025425008EE423 /* Sources */ = {
@@ -259,12 +338,13 @@
 		};
 		59AABF071F025425008EE423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3009B9A9BF3B1425F570267 /* Pods-FIRQuickstart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 876L3LH7TJ;
 				INFOPLIST_FILE = FIRQuickstart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GMV.FIRQuickstart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.firquickstart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,12 +352,13 @@
 		};
 		59AABF081F025425008EE423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07AC8F1AEE921DA7EEAC1538 /* Pods-FIRQuickstart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 876L3LH7TJ;
 				INFOPLIST_FILE = FIRQuickstart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GMV.FIRQuickstart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.firquickstart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +383,7 @@
 				59AABF081F025425008EE423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
